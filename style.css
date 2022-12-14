@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Alexandria&display=swap');
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  /* width: 100vw; */
+  background-image: url(background.jpeg);
+  background-size: cover;
+  font-family: Alexandria, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.game {
+  width: 530px;
+  height: 600px;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 10px;
+  box-shadow: 0 10px 20px 10px rgba(0, 0, 0, 0.5);
+}
+
+.header {
+  background: rgba(30, 143, 255, 0.7);
+  height: 100px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  color: white;
+  font-size: 30px;
+}
+
+.player {
+  margin: 50px;
+}
+
+h2 {
+  margin-bottom: 20px;
+}
+
+.fa-solid,
+.fa-regular {
+  font-size: 50px;
+  margin-right: 40px;
+  user-select: none;
+}
+
+#human .fa-solid,
+#human .choice {
+  color: rgba(0, 128, 0, 0.7);
+  cursor: pointer;
+}
+
+#computer .fa-solid,
+#computer .choice {
+  color: rgba(255, 0, 0, 0.7);
+}
+
+.player .fa-solid:last-of-type {
+  margin-right: 0;
+}
+
+.selected {
+  color: rgba(0, 0, 0, 0.8) !important;
+}
+
+.reset {
+  font-size: 30px;
+  cursor: pointer;
+  margin-left: 50px;
+}
+
+.result-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.result {
+  font-size: 40px;
+  margin: unset;
+  margin-top: 20px;
+}
+
+/* Large Smartphone */
+@media screen and (max-width: 600px) {
+  .game {
+    width: 95%;
+    height: 580px;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+
+  .player {
+    margin: 50px 0 25px 25px;
+  }
+
+  .fa-solid,
+  .fa-regular {
+    margin-right: 20px;
+  }
+
+  .reset {
+    margin-top: 25px;
+    margin-left: 25px;
+  }
+}
+
+/* Small smartphone */
+@media screen and (max-width: 376px) {
+  .game {
+    width: 95%;
+    height: 550px;
+  }
+
+  h1 {
+    font-size: 22px;
+  }
+
+  .player {
+    margin: 43px 0 25px 20px;
+  }
+
+  .fa-solid,
+  .fa-regular {
+    font-size: 43px;
+  }
+
+  .reset {
+    margin-top: 15px;
+  }
+
+  .result-container {
+    margin: 0 20px;
+  }
+}
